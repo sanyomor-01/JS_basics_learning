@@ -69,8 +69,6 @@ Zoe.greet()
 for(let )
 
 */
-const myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello Squirrel'
 
 
 // Magic Eight Balls
@@ -121,4 +119,19 @@ switch (randomNumber){
   eightBall = ''
 }
 console.log(eightBall)
+
+
+//Race Day
+
+//Generate random register number
+let raceNumber = Math.floor(Math.random() * 1000)
+
+const registeredEarly = true;//checks if a racer registerd early
+
+const runnerAge = 18;
+
+//control flow to check whether runner is adult and registered early
+if (runnerAge  >= 18 && registeredEarly == true){
+  raceNumber += 1000;
+}
 
