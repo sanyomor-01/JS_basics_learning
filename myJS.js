@@ -115,8 +115,6 @@ switch (randomNumber){
   eightBall = 'Signs point to yes'
   break;
 
-  default:
-  eightBall = ''
 }
 console.log(eightBall)
 
@@ -128,7 +126,7 @@ let raceNumber = Math.floor(Math.random() * 1000)
 
 const registeredEarly = true;//checks if a racer registerd early
 
-const runnerAge = 18;
+const runnerAge = 17;
 
 //control flow to check whether runner is adult and registered early
 if (runnerAge  >= 18 && registeredEarly == true){
