@@ -146,3 +146,24 @@ else if(runnerAge < 18){
   console.log(`${raceNumber} , you start the race at 12:30 pm`)
 }
 else{console.log(`${raceNumber} see the registration desk`)}
+
+// Functions
+ const monitorCount = (rows ,columns)=>{
+  return rows * columns
+
+ }
+//helper functions
+const costOfMonitors =(rows, columns) =>{
+  return monitorCount(rows,columns) * 300
+}
+console.log(costOfMonitors(9,5))
+
+//function as a variable
+const plantNeedsWater = function (day) {
+    if (day === 'Wednesday'){
+      return true
+    }
+    else return false
+}
+plantNeedsWater('Tuesday')
+console.log(plantNeedsWater('Tuesday'))
