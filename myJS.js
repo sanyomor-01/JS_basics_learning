@@ -136,14 +136,15 @@ if (runnerAge  >= 18 && registeredEarly == true){
 }
 
 //Schedulling the race for each individual
-if (runnerAge >= 18 && registeredEarly == true){
+if (runnerAge > 18 && registeredEarly == true){
   console.log(`${raceNumber} will race at 9:30 am`)
 }
 
-else if(runnerAge >= 18 && registeredEarly == false){
+else if(runnerAge > 18 && registeredEarly == false){
   console.log(`${raceNumber} will start the race at 11:30 am`)
 }
 
-if (runnerAge < 18){
+else if(runnerAge < 18){
   console.log(`${raceNumber} , you start the race at 12:30 pm`)
 }
+else{console.log(`${raceNumber} see the registration desk`)}
