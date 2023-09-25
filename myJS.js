@@ -178,3 +178,11 @@ const wow =(arr) =>{
 
 wow(farmland)
 console.log(farmland)
+
+//Loops
+//A loop is a programming tool that repeats a set of instructions until a 
+//specified condition, called a stopping condition is reached.
+
+for (let counter = 3; counter >= 0; counter--){
+  console.log(counter)
+}G
