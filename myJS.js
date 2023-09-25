@@ -163,7 +163,18 @@ const plantNeedsWater = function (day) {
     if (day === 'Wednesday'){
       return true
     }
-    else return false
+    else return false;
 }
 plantNeedsWater('Tuesday')
 console.log(plantNeedsWater('Tuesday'))
+
+//sales , negotiation , human nature and money---rading assignment
+
+//array
+const farmland = ['Avocado', 'Maize', 'Shea nut']
+const wow =(arr) =>{
+  arr.push('Palm')
+}
+
+wow(farmland)
+console.log(farmland)
