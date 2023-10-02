@@ -72,7 +72,7 @@ for(let )
 
 
 // Magic Eight Balls
-let userName = ''
+/*let userName = ''
 userName ? console.log(`Hello ${userName}`): console.log('Hello!')
 
 let userQuestion = ''
@@ -178,11 +178,37 @@ const wow =(arr) =>{
 
 wow(farmland)
 console.log(farmland)
-
+*/
 //Loops
 //A loop is a programming tool that repeats a set of instructions until a 
 //specified condition, called a stopping condition is reached.
 
-for (let counter = 3; counter >= 0; counter--){
+for (let counter = 0; counter <= 4; counter ++){
   console.log(counter)
-}G
+}
+
+//looping through arrays
+const vacationSpots = ['Balis','Paris', 'Tulum', 'Tema']
+
+for (let n = 0; n < vacationSpots.length; n++){
+  console.log('I would love to visit ' + vacationSpots[n] )
+}
+
+//nested loops
+//When we have a loop running inside another loop, we call that a nested loop. One use for a nested for loop is to compare the elements in two arrays. For each round of the outer for loop, the inner for loop will run completely.
+
+
+//Code to select mutual friends from two friends
+// Write your code below
+const bobsFollowers = ['Nadia', 'Zoey', 'Stephan','Henny']
+const tinasFollowers = ['Henny','Nadia','Michael']
+const mutualFollowers = []
+
+for (let i = 0; i < bobsFollowers.length; i++){
+  for (let j = 0; j < tinasFollowers.length; j++){
+    if (bobsFollowers[i] === tinasFollowers[j]){
+        mutualFollowers.push(bobsFollowers[i])
+        console.log(mutualFollowers)
+    }
+  }
+}
