@@ -315,3 +315,26 @@ const bigNumbers = [100, 200, 300, 400, 500];
 
 // Create the smallNumbers array below
 const smallNumbers = bigNumbers.map(small => small / 100)
+
+
+//Another useful iterator method is .filter(). Like .map(), .filter() returns a new array. However, .filter() returns an array of elements after filtering out certain elements from the original array. The callback function for the .filter() method should return true or false depending on the element that is passed to it. The elements that cause the callback function to return true are added to the new array
+
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+// Call .filter() on randomNumbers below
+ const someNumbers = randomNumbers.filter(value => value < 250 )
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+
+// Call .filter() on favoriteWords below
+const longFavoriteWords = favoriteWords.filter(word => word.length > 7)
+
+//findIndex() METHOD
+const Animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+const foundAnimal = Animals.findIndex(animal => animal === 'elephant')
+
+const startsWithS = Animals.findIndex(animal => {
+  return animal[0] === 's';
+});
+
