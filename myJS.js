@@ -291,5 +291,27 @@ let checkB = func(val)
 return (checkA === checkB)? func(val):'inconsistent results'
 }
 
-
 console.log(checkConsistentOutput(addTwo, 30));
+
+//iterators
+//.forEach method
+
+const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+// Iterate over fruits below
+fruits.forEach(value => console.log(`I want to eat a ${value}`))
+
+const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+
+
+// Create the secretMessage array below
+//When .map() is called on an array, it takes an argument of a callback function and returns a new array!
+const secretMessage = animals.map(word => word[0] )
+
+
+console.log(secretMessage.join(''));
+
+const bigNumbers = [100, 200, 300, 400, 500];
+
+// Create the smallNumbers array below
+const smallNumbers = bigNumbers.map(small => small / 100)
