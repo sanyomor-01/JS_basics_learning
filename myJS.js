@@ -187,13 +187,13 @@ console.log(farmland)
   console.log(counter)
 }*/
 
-//looping through arrays
+/*looping through arrays
 const vacationSpots = ['Balis','Paris', 'Tulum', 'Tema']
 
 for (let n = 0; n < vacationSpots.length; n++){
   console.log('I would love to visit ' + vacationSpots[n] )
 }
-
+*/
 //nested loops
 //When we have a loop running inside another loop, we call that a nested loop. One use for a nested for loop is to compare the elements in two arrays. For each round of the outer for loop, the inner for loop will run completely.
 
@@ -240,3 +240,26 @@ do {
   i++
   console.log(i)
 }while(i <n )
+
+//the break keyword
+for (let i = 0; i < 99; i++) {
+  if (i > 2 ) {
+     break;
+  }
+  console.log('Banana.');
+}
+
+console.log('Orange you glad I broke out the loop!');
+
+const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+
+// Write your code below
+for (let i = 0 ; i < rapperArray.length; i ++){
+  console.log(rapperArray[i])
+  if (i === 2){
+    break;
+  }
+}
+console.log("And if you don't know, now you know.")
+
+
