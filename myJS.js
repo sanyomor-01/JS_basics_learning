@@ -262,4 +262,19 @@ for (let i = 0 ; i < rapperArray.length; i ++){
 }
 console.log("And if you don't know, now you know.")
 
+/// Higher-order functions
+//Higher-order functions are functions that accept other functions as arguments and/or return functions as output
 
+//functions as data
+const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
+  for(let i = 1; i <= 1000000; i++) {
+    if ( (2 + 2) != 4) {
+      console.log('Something has gone very wrong :( ');
+    }
+  }
+};
+
+// Write your code below
+const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
+isTwoPlusTwo();
+console.log(isTwoPlusTwo.name)
