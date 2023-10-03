@@ -183,9 +183,9 @@ console.log(farmland)
 //A loop is a programming tool that repeats a set of instructions until a 
 //specified condition, called a stopping condition is reached.
 
-for (let counter = 0; counter <= 4; counter ++){
+/*for (let counter = 0; counter <= 4; counter ++){
   console.log(counter)
-}
+}*/
 
 //looping through arrays
 const vacationSpots = ['Balis','Paris', 'Tulum', 'Tema']
@@ -212,3 +212,31 @@ for (let i = 0; i < bobsFollowers.length; i++){
     }
   }
 }
+
+//while loop
+const cards = ['diamond', 'spade', 'heart', 'club'];
+
+// Write your code below
+//code assigns random number to elements in array as their index
+let currentCard;
+while (currentCard !=='spade'){
+  currentCard =cards[Math.floor(Math.random()*4)]
+  console.log(currentCard)
+}
+
+//Do...while loop
+//A do...while statement says to do a task once and then keep doing it until a specified condition is no longer met.
+// Write your code below
+let cupsOfSugarNeeded = 5;
+let cupsAdded = 0;
+do{
+  cupsAdded++;
+  console.log(cupsAdded + ' cup was added')
+}while(cupsAdded < cupsOfSugarNeeded);
+
+const n = 5
+let i = 0
+do {
+  i++
+  console.log(i)
+}while(i <n )
