@@ -443,3 +443,12 @@ let remotelyDisable = obj => {
 greenEnergy(spaceShip);
 remotelyDisable(spaceShip)
 console.log(spaceship)
+
+// Write your code below
+for (let crewMembers in spaceship.crew){
+  console.log(`${crewMembers}: ${spaceship.crew[crewMembers].name}`)
+};
+
+for (let crewMembers in spaceship.crew){
+  console.log(`${spaceship.crew[crewMembers].name}: ${spaceship.crew[crewMembers].degree}`)
+}
