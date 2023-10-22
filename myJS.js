@@ -72,7 +72,7 @@ for(let )
 
 
 // Magic Eight Balls
-/*let userName = ''
+let userName = ''
 userName ? console.log(`Hello ${userName}`): console.log('Hello!')
 
 let userQuestion = ''
@@ -178,14 +178,14 @@ const wow =(arr) =>{
 
 wow(farmland)
 console.log(farmland)
-*/
+
 //Loops
 //A loop is a programming tool that repeats a set of instructions until a 
 //specified condition, called a stopping condition is reached.
 
-/*for (let counter = 0; counter <= 4; counter ++){
+for (let counter = 0; counter <= 4; counter ++){
   console.log(counter)
-}*/
+}
 
 /*looping through arrays
 const vacationSpots = ['Balis','Paris', 'Tulum', 'Tema']
@@ -476,4 +476,18 @@ const cop = {
 };
 console.log(cop.energyLevel)
 
+//Factory Functions
+//A factory function is a function that returns an object and can be reused to make multiple object instances
+
+const robotFactory = (model, mobile ) =>{
+  return{
+    model:model,
+    mobile: mobile,
+    beep() {
+     console.log("Beep Boop")
+   }
+  }  
+}
+const tinCan = robotFactory('P-500', true)
+tinCan.beep()
 
