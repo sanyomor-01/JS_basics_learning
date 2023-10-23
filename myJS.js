@@ -509,5 +509,11 @@ const {functionality} = robotCap
 functionality.beep()
 functionality.fireLaser()
 
-
-
+//classes 
+//class syntax
+class Surgeon {
+  constructor (name, department){
+    this.name = name
+    this.department = department
+  }
+}
