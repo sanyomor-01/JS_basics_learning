@@ -10,10 +10,7 @@ const Increment = () => {
     count += 100;
     countEl.textContent = count 
 }
-const decrement = () =>{
-    count -= 50
-    countEl.textContent = count
-}
+
 const save = () =>{
   
  let saveEl = document.getElementById('save-el')
